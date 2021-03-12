@@ -1,0 +1,40 @@
+@media screen and (max-width: 1440px){
+    .application-tagline{
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .application-tagline{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .application-tagline > h2{
+        font-size: 0.5em;
+    }
+}
+@media screen and (max-width: 425px){
+    .application-tagline > h2{
+        font-size: 0.25em;
+    }   
+}
+.secondary-text{
+	text-align: justify;
+}
+:root{
+	--main: #36a8ff;
+	--another: #2f4053;
+}
+::selection{
+	background: var(--main);
+	color: var(--another);
+}
+.term-of-use--content > p{
+	text-align: justify;
+}
+.term-of-use--content > span{
+	color: var(--main);
+}
+nav > a:hover{
+	border-bottom: 2px solid var(--main);
+}
