@@ -1,6 +1,12 @@
+@import 'button.css';
+
 @media screen and (max-width: 1440px){
     .application-tagline{
         margin-bottom: 100px;
+    }
+    .end{
+    	margin-top: 20px;
+    	margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 1024px){
@@ -12,29 +18,55 @@
     .application-tagline > h2{
         font-size: 0.5em;
     }
+    .tip-button{
+		margin-left: -65px;
+	}
 }
 @media screen and (max-width: 425px){
     .application-tagline > h2{
         font-size: 0.25em;
-    }   
+    }
+    .end{
+    	display: none;
+    }
+    .term-of-use--content :is(p, span, li){
+    	font-size: 15px;
+    }
+    .stepper-container{
+    	width: 425px;
+    	margin-top: 50px;
+    }
 }
-.secondary-text{
-	text-align: justify;
+@media screen and (min-width: 426px){
+	.end-mobile{
+		display: none;
+	}
+	.main-form-block > .end-form{
+		display: none;
+	}
+	.stepper-container{
+		margin-top: -100px;
+	}
 }
-:root{
-	--main: #36a8ff;
-	--another: #2f4053;
+@media screen and (max-width: 375px){
+	.application-tagline > p{
+		font-size: 2rem;
+	}
+	.nav-end{
+		display: none;
+	}
+	.stepper-container{
+    	max-width: 375px;
+    	margin-top: 50px;
+    }
 }
-::selection{
-	background: var(--main);
-	color: var(--another);
+@media screen and (max-width: 320px){
+	.application-tagline > h2{
+		font-size: 0.2em;
+	}
+	.stepper-container{
+    	max-width: 320px;
+    	margin-top: 50px;
+    }
 }
-.term-of-use--content > p{
-	text-align: justify;
-}
-.term-of-use--content > span{
-	color: var(--main);
-}
-nav > a:hover{
-	border-bottom: 2px solid var(--main);
-}
+
