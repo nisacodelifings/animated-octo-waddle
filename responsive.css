@@ -29,8 +29,8 @@
     .end{
     	display: none;
     }
-    .term-of-use--content :is(p, span, li){
-    	font-size: 15px;
+    .term-of-use--content > p, .term-of-use--content > span, .term-of-use--content > li{
+    	font-size: 12px;
     }
     .stepper-container{
     	width: 100%;
