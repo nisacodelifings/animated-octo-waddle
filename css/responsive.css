@@ -29,12 +29,15 @@
     .end{
     	display: none;
     }
-    .term-of-use--content > p, .term-of-use--content > span, .term-of-use--content > li{
+    .term-of-use--content > p, .term-of-use--content > span, .term-of-use--content > ol > li{
     	font-size: 12px;
     }
     .stepper-container{
     	width: 100%;
     	margin-top: 50px;
+    }
+    .ayo-beli{
+        font-size: 20pt;
     }
 }
 @media screen and (min-width: 426px){
@@ -47,6 +50,9 @@
 	.stepper-container{
 		margin-top: -100px;
 	}
+    .promise{
+        font-size: 20pt;
+    }
 }
 @media screen and (max-width: 375px){
 	.application-tagline > p{
@@ -60,5 +66,8 @@
 	.application-tagline > h2{
 		font-size: 0.2em;
 	}
+    .main-from{
+        margin-right: 10px;
+    }
 }
 
